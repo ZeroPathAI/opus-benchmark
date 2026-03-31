@@ -1,0 +1,18 @@
+{
+  "name": "no-justification",
+  "branch": "no-justification",
+  "tip_commit": "aa25487cd9170fa0eb8f26ebf7fe53ce29e233d5",
+  "description": "Vulnerability analysis with a simple prompt asking for CWEs, code snippets, short description, and long description. No structured justification or execution trace required. The model is told to be thorough but precise and to only report real vulnerabilities.",
+  "model": "claude-opus-4-6",
+  "thinking": "medium",
+  "max_tokens": 32000,
+  "dataset": "colin/PrimeVul paired test (435 pairs, HuggingFace)",
+  "finding_schema": {
+    "fields": [
+      "cwes",
+      "code_snippets",
+      "short_description",
+      "long_description"
+    ]
+  }
+}

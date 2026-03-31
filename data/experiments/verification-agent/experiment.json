@@ -1,0 +1,11 @@
+{
+  "name": "verification-agent",
+  "branch": "verification-agent",
+  "tip_commit": "c28a5ed",
+  "description": "Same structured reasoning as experiment 3, plus a Sonnet 4.6 verifier agent. The analysis agent must call verify_finding for each vulnerability before including it. The verifier checks: is the undesired operation real, is initial_state correct, do steps follow logically, are conditionals justified, do transformations produce correct out_state, does final state match preconditions. Up to 2 verification attempts per finding; unverified findings are discarded.",
+  "model": "claude-opus-4-6",
+  "verifier_model": "claude-sonnet-4-6",
+  "thinking": "medium (both models)",
+  "max_tokens": 64000,
+  "dataset": "colin/PrimeVul paired test (435 pairs, HuggingFace)"
+}

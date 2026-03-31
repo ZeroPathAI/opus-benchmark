@@ -1,0 +1,21 @@
+{
+  "name": "limited-justification",
+  "branch": "limited-justification",
+  "tip_commit": "0362c11ae9085b377c4e332732c5131e302347c7",
+  "description": "Vulnerability analysis requiring structured step-by-step justification. VulnerabilityFinding includes a Justification with UndesiredOperation (code_snippets, CWEs) and step-by-step ProgramSteps tracking variable state. The model must demonstrate a concrete execution path from function entry to the undesired operation. The prompt explicitly rejects theoretical risks, style issues, and issues prevented by existing checks.",
+  "model": "claude-opus-4-6",
+  "thinking": "medium",
+  "max_tokens": 32000,
+  "dataset": "colin/PrimeVul paired test (435 pairs, HuggingFace)",
+  "finding_schema": {
+    "fields": [
+      "code_snippets",
+      "description",
+      "justification"
+    ],
+    "justification_fields": [
+      "undesired_operation (code_snippets, cwes)",
+      "step_by_step_execution (description, state)"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "extensive-justification",
+  "branch": "extensive-justification",
+  "tip_commit": "b4b8578",
+  "description": "Enhanced structured justification with two step types. VulnerabilityFinding is now UndesiredOperation (what goes wrong: description, code, CWEs, impact, required variable state) + Justification (proof of reachability: initial_state at function entry, then a trace of DataTransformation steps (in_state -> out_state) and ConditionalStep steps (prove specific branch is taken with current state). The prompt requires a complete trace from function entry to undesired operation, covering both control flow and data flow.",
+  "model": "claude-opus-4-6",
+  "thinking": "medium",
+  "max_tokens": 32000,
+  "dataset": "colin/PrimeVul paired test (435 pairs, HuggingFace)",
+  "finding_schema": {
+    "VulnerabilityFinding": [
+      "undesired_operation",
+      "justification"
+    ],
+    "UndesiredOperation": [
+      "description",
+      "code_snippets",
+      "cwes",
+      "impact",
+      "state"
+    ],
+    "Justification": [
+      "initial_state",
+      "step_by_step_execution"
+    ],
+    "step_types": [
+      "DataTransformation (description, in_state, out_state)",
+      "ConditionalStep (condition, branch_taken, reasoning, relevant_state)"
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "pair_wise": {
+    "total_pairs": 435,
+    "p_c": {
+      "count": 59,
+      "pct": 13.6
+    },
+    "p_c_rigorous": {
+      "count": 38,
+      "pct": 8.7
+    },
+    "p_v": {
+      "count": 218,
+      "pct": 50.1
+    },
+    "p_b": {
+      "count": 149,
+      "pct": 34.3
+    },
+    "p_r": {
+      "count": 9,
+      "pct": 2.1
+    }
+  },
+  "detection_rates": {
+    "vuln_flagged": {
+      "count": 277,
+      "total": 435,
+      "pct": 63.7
+    },
+    "benign_flagged": {
+      "count": 228,
+      "total": 435,
+      "pct": 52.4
+    }
+  },
+  "diff_analysis": {
+    "vuln_only_pairs": 172,
+    "benign_only_pairs": 119
+  },
+  "cve_judgment": {
+    "total_judged": 171,
+    "correct": {
+      "count": 122,
+      "pct": 71.3
+    },
+    "incorrect": {
+      "count": 49,
+      "pct": 28.7
+    }
+  }
+}
