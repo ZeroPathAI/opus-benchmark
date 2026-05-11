@@ -2,6 +2,8 @@
 
 Benchmarking Claude Opus 4.6's ability to detect real-world C/C++ vulnerabilities across four prompting and agent strategies. We evaluate on the [PrimeVul](https://huggingface.co/datasets/colin/PrimeVul) paired test set (435 vulnerability/fix pairs from open-source projects), measuring precision, recall, and CVE-correctness to understand how structured reasoning, justification depth, and verification agents affect detection quality.
 
+Check out [our blog post](https://zeropath.com/blog/benchmarking-opus-4-6-vuln-detection) for a more in-depth discussion of these results.
+
 ## Key Finding
 
 Requiring the model to produce increasingly rigorous justifications (execution traces, state proofs) improves pair-correct precision (P-C) from **13.6%** to **20.3%**, with rigorous precision nearly doubling from **8.7%** to **15.8%**. Adding a verification agent pushes P-C to **23.3%** and CVE recall to **28.9%**.
